@@ -32,12 +32,11 @@ void init() {
     for (int i = 1; i < N; i++) {
         fact[i] = i * fact[i - 1] % M;
     }
-    // compute inverse of fact[N-1] once
-    invfact[N - 1] = inv(fact[N - 1], M);
-    // fill remaining invfacts in reverse
-    for (int i = N - 1; i > 0; i--) {
-        invfact[i - 1] = i * invfact[i] % M;
+    invfact[0]=1;
+    for (int i = 1; i < N; i++) {
+        invfact[i] = inv(i, M) * invfact[i - 1] % M;
     }
+
 }
 int choose_precomputed(int n, int r) {
     return fact[n]*invfact[r]%M*invfact[n-r]%M;
