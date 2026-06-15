@@ -8,6 +8,8 @@ vector<int> parent;
 
 int cycle_start, cycle_end;
 
+
+// directed graph
 bool dfs(int v) {
     color[v] = 1;
 

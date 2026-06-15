@@ -7,6 +7,6 @@ int main() {
     cin>>n;
     int a[n];
     rep(i,n) cin>>a[i];
-    rep(i,n/2) a[i] = a[n-i-1];
+    rep(i,n/2) swap(a[i],  a[n-i-1]);
     rep(i,n) cout<<a[i]<<" ";
 }

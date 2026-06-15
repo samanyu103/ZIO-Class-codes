@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 int main() {
-    string name;
-    cin>>name;
-    cout<<"Hello "<<name<<endl;
+    string a;
+    cin>>a;
+    cout<<"Hello "<<a<<endl;
     return 0;
 }

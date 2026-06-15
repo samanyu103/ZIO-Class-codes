@@ -1,5 +1,4 @@
-#include<iostream>
-#include <climits> // for INT_MIN.
+#include<bits/stdc++.h> // for INT_MIN.
 
 using namespace std;
 
@@ -10,8 +9,8 @@ int main() {
     for(int i = 0; i< n; i++) {
         int x;
         cin>>x;
-        if (x>mx) mx=x;
-        // mx= max(mx, x);
+        // if (x>mx) mx=x;
+        mx= max(mx, x);
     }
     cout<<mx<<endl;
 }

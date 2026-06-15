@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
 int main() {
-    double x = 3.0/2;
-    cout<<x<<endl;
+    bool a = -1;
+    cout<<a<<endl;
 }

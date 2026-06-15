@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 int main() {
-    double x = 3.0/2;
+    char x = 96;
     cout<<x<<endl;
+
 }
