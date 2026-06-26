@@ -11,7 +11,7 @@ int main() {
 }
 // part 2
 // int n = s.size();
-// rep(i,n/2) s[i] = s[n-i-1]
+// rep(i,n/2) swap(s[i], s[n-i-1])
 
 // part 1
 // int n = s.size();
