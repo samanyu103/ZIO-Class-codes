@@ -22,6 +22,7 @@ int main() {
             }
         }
         // [i..j-1] is good
+        // starting at i.
         ans+=j-i;
         // remove i
         m[a[i]]--;

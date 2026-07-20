@@ -7,8 +7,8 @@ int partition(int a[], int left, int right) {
     int j = right;
 
     while (true) {
-        while (i <= right && a[i] <= pivot) i++;
-        while (a[j] > pivot) j--;
+        while (i < j && a[i] <= pivot) i++;
+        while (i<j and a[j] > pivot) j--;
         // a[i]>pivot and a[j]<= pivot
         if (i >= j) break;
 

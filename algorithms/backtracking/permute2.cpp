@@ -21,7 +21,7 @@ void permute(vector<int>& a, vector<int>& curr, vector<bool>& used) {
 
         curr.pop_back();         // backtrack
         used[i] = false;
-        while(i+1<a.size() and a[i+1]==a[i]) i++;
+        while(i+1<a.size() and a[i+1]==a[i]) i++;// i++ will happen at the end.
     }
 }
 

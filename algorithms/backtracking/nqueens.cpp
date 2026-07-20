@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+#define rep(i,n) for(int i = 0; i< n; i++)
 
 vector<int> cols;
 vector<int> leftDiagonal;
@@ -50,14 +51,23 @@ vector<vector<int>> nQueen(int n) {
 }
 
 int main() {
-    int n = 8;
+    int n;
+    cin>>n;
     vector<vector<int>> ans = nQueen(n);
     cout<<ans.size()<<endl;
 
-    // for (auto& v : ans) {
-    //     for (int x : v) cout << x << " ";
-    //     cout << endl;
-    // }
+    for (auto& v : ans) {
+        rep(i,n){
+            rep(j,n) {
+                if(j==v[i]-1) {
+                    cout<<" Q";
+                }
+                else cout<<" .";
+            }
+            cout<<endl;
+        }
+        cout<<endl;
+    }
 
     return 0;
 }
